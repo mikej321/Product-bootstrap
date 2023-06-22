@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --font-size-para: 14px;
+    --montserrat: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--montserrat);
+    background: var(--cream);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fraunces);
+    color: var(--very-dark-blue);
+}
+
+img {
+    object-fit: cover;
+}
+
+.main-container {
+    max-width: 35rem; 
+    background: var(--white);  
+}
+
+.product-info {
+    padding-inline: 2.5rem;
+}
+
+.product-info > p:first-child {
+    color: var(--dark-grayish-blue);
+    letter-spacing: 5px;
+}
+
+.product-info > h1 {
+    line-height: 3.3rem;
+}
+
+.product-info > p:nth-child(3) {
+    color: var(--dark-grayish-blue);
+    line-height: 2.3rem;
+}
+
+.price-container > p:first-child {
+    font-family: var(--fraunces);
+    color: var(--dark-cyan);
+}
+
+.price-container > p:last-child {
+    color: var(--dark-grayish-blue);
+}
+
+.cart-btn {
+    background-color: var(--dark-cyan) !important;
+    transition: background .3s ease-in-out;
+}
+
+.cart-btn:hover {
+    background: #023020 !important;
+}
+
+
+@media screen and (min-width: 767px) {
+    .main-container {
+        max-width: 60rem;
+        max-height: 45rem;
+    }
+
+    h1 {
+        font-size: 3.5rem !important;
+    }
+
+    .price-container > p:first-child {
+        font-size: 3.5rem;
+    }
+    
+}
+
